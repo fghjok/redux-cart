@@ -62,7 +62,7 @@ function receiveProds(json) {
 export function fetchProds() {
   return dispatch => {
     dispatch(requestProds());
-    return fetch(`http://39.108.102.200/static/prods.json`)
+    return fetch(`./static/prods.json`)
       .then(response => response.json())
       .then(json => dispatch(receiveProds(json)));
   };

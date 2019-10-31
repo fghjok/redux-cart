@@ -23,7 +23,7 @@ const Slogan = styled.div`
   text-align: center;
   font-family: Bloomfield, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #ffffff;
-  background-image: url("http://39.108.102.200/static/bike.jpg");
+  background-image: url("./static/bike.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: fill;

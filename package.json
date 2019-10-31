@@ -2,6 +2,7 @@
   "name": "redux-mall",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fghjok.github.io/redux-cart/",
   "dependencies": {
     "@chakra-ui/core": "^0.4.0",
     "@emotion/core": "^10.0.21",
