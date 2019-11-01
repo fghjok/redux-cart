@@ -2,7 +2,7 @@
   "name": "redux-mall",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fghjok.github.io/redux-cart/",
+  "homepage": "./",
   "dependencies": {
     "@chakra-ui/core": "^0.4.0",
     "@emotion/core": "^10.0.21",
@@ -24,7 +24,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "prettier": "1.18.2"
   }
 }
