@@ -1,7 +1,7 @@
 [
-    {"id": 1, "bigimg":"http://39.108.102.200/static/AMD.webp", "longdiscription":"AMD APU系列 A8-9600 处理器 4核 R7核显 3.1GHz AM4接口 盒装CPU", "price": 290, "shortdiscription":"A8-9600 处理器 4核", "brand":"AMD"},
-    {"id": 2, "bigimg":"http://39.108.102.200/static/NIKON.jpg", "longdiscription":"尼康（Nikon） D610机身 单反相机 入门级全画幅机身 d610", "price": 6299, "shortdiscription":"D610机身 单反相机", "brand":"Nikon"},
-    {"id": 3, "bigimg":"http://39.108.102.200/static/DDR3.jpg", "longdiscription":"美商海盗船(USCORSAIR)DDR3 1600 8GB 台式机内存条 复仇者系列 梳型散热片", "price": 279, "shortdiscription":"DDR3 1600 8GB", "brand":"USCORSAIR"},
-    {"id": 4, "bigimg":"http://39.108.102.200/static/GIGABYTE.jpg", "longdiscription":"技嘉（GIGABYTE）X570 GAMING X 游戏主板 支持3700X/3800X/3900X（AMD X570/socket AM4)", "price": 1500, "shortdiscription":"X570 GAMING X 游戏主板", "brand":"GIGABYTE"}
+    {"id": 1, "bigimg":"./static/AMD.webp", "longdiscription":"AMD APU系列 A8-9600 处理器 4核 R7核显 3.1GHz AM4接口 盒装CPU", "price": 290, "shortdiscription":"A8-9600 处理器 4核", "brand":"AMD"},
+    {"id": 2, "bigimg":"./static/NIKON.jpg", "longdiscription":"尼康（Nikon） D610机身 单反相机 入门级全画幅机身 d610", "price": 6299, "shortdiscription":"D610机身 单反相机", "brand":"Nikon"},
+    {"id": 3, "bigimg":"./static/DDR3.jpg", "longdiscription":"美商海盗船(USCORSAIR)DDR3 1600 8GB 台式机内存条 复仇者系列 梳型散热片", "price": 279, "shortdiscription":"DDR3 1600 8GB", "brand":"USCORSAIR"},
+    {"id": 4, "bigimg":"./static/GIGABYTE.jpg", "longdiscription":"技嘉（GIGABYTE）X570 GAMING X 游戏主板 支持3700X/3800X/3900X（AMD X570/socket AM4)", "price": 1500, "shortdiscription":"X570 GAMING X 游戏主板", "brand":"GIGABYTE"}
     
 ]
