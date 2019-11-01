@@ -27,7 +27,7 @@ const App = () => (
       <ContainerForHeader />
       <ContainerForMainBox />
       <Footer>@NO RIGHTS RESERVED</Footer>
-      <Github onClick="https://github.com/fghjok/redux-cart">
+      <Github href="https://github.com/fghjok/redux-cart">
         <svg
           t="1572336511454"
           class="icon"
