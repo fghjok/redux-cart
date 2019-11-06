@@ -3,7 +3,7 @@ import CartButton from "../components/CartButton";
 import Badge from "../components/Badge";
 import styled from "styled-components";
 
-const Main_Header = styled.div`
+const MainHeader = styled.div`
   position: fixed;
   top: 0px;
   width: 100%;
@@ -19,10 +19,10 @@ const Main_Header = styled.div`
 `;
 
 const Header = ({ numberOfSelectedItems, open }) => (
-  <Main_Header>
+  <MainHeader>
     <CartButton open={open} />
     <Badge number={numberOfSelectedItems} />
-  </Main_Header>
+  </MainHeader>
 );
 
 export default Header;

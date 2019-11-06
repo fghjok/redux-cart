@@ -40,7 +40,7 @@ const Icon = styled.div`
 const Text = styled.h2`
   font-size: 25px;
 `;
-const List_Wrapper = styled.div`
+const ListWrapper = styled.div`
   margin-top: 83px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -52,7 +52,7 @@ const List_Wrapper = styled.div`
   padding-bottom: 25px;
   width: 97%;
 `;
-const Checkout_Wrapper = styled.div`
+const CheckoutWrapper = styled.div`
   position: fixed;
   bottom: 0;
   height: 85px;
@@ -61,12 +61,12 @@ const Checkout_Wrapper = styled.div`
   box-shadow: rgb(231, 231, 231) -3px 0px 3px 0px;
   background-color: #fff;
 `;
-const Checkout_Inner_Left = styled.div`
+const CheckoutInnerLeft = styled.div`
   flex-grow: 1;
   align-items: center;
   display: flex;
 `;
-const Checkout_Inner_Right = styled.div`
+const CheckoutInnerRight = styled.div`
   display: flex;
   width: 300px;
   align-items: center;
@@ -75,11 +75,11 @@ const Checkout_Inner_Right = styled.div`
 const Total = styled.div`
   font-size: 18px;
 `;
-const Total_Number = styled.div`
+const TotalNumber = styled.div`
   font-size: 18px;
   font-weight: 700;
 `;
-const Pay_Button = styled.div`
+const PayButton = styled.div`
   width: 97%;
   height: 50px;
   background-color: rgb(80, 1, 145);
@@ -188,7 +188,7 @@ const DrawerWithCart = ({
               </svg>
             </Icon>
           </Header>
-          <List_Wrapper>
+          <ListWrapper>
             {ItemsInCart.map(item => (
               <ListItemInCart
                 key={item.id}
@@ -198,16 +198,16 @@ const DrawerWithCart = ({
                 removeById={onRemove(item.id)}
               />
             ))}
-          </List_Wrapper>
-          <Checkout_Wrapper>
-            <Checkout_Inner_Left>
+          </ListWrapper>
+          <CheckoutWrapper>
+            <CheckoutInnerLeft>
               <Total>Total:</Total>
-              <Total_Number>{payment}</Total_Number>
-            </Checkout_Inner_Left>
-            <Checkout_Inner_Right>
-              <Pay_Button onClick={onCheckOut}>Proceed to Checkout</Pay_Button>
-            </Checkout_Inner_Right>
-          </Checkout_Wrapper>
+              <TotalNumber>{payment}</TotalNumber>
+            </CheckoutInnerLeft>
+            <CheckoutInnerRight>
+              <PayButton onClick={onCheckOut}>Proceed to Checkout</PayButton>
+            </CheckoutInnerRight>
+          </CheckoutWrapper>
         </Wrapper>
       </DrawerBody>
     </DrawerContent>

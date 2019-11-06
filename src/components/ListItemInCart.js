@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-const Item_Wrapper = styled.div`
+const ItemWrapper = styled.div`
   width: 100%;
   display: flex;
   border-top: 2px solid #d7d7d7;
   padding-top: 5px;
   margin-bottom: 25px;
 `;
-const Item_Inner_Left = styled.div`
+const ItemInnerLeft = styled.div`
   display: flex;
   flex-direction: row;
   flex-grow: 1;
 `;
-const Inner_Pic = styled.div`
+const InnerPic = styled.div`
   width: 85px;
   height: 85px;
 `;
@@ -22,7 +22,7 @@ const Pic = styled.img`
   height: 100%;
   object-fit: contain;
 `;
-const Inner_Discription = styled.div`
+const InnerDiscription = styled.div`
   display: flex;
   flex-direction: column;
   height: 100px;
@@ -43,14 +43,14 @@ const Price = styled.div`
   font-size: 16px;
   line-height: 19px;
 `;
-const Item_Inner_Right = styled.div`
+const ItemInnerRight = styled.div`
   display: flex;
   flex-direction: column;
 `;
 const Quantity = styled.div`
   flex-grow: 1;
 `;
-const Quantity_Inner = styled.div`
+const QuantityInner = styled.div`
   display: flex;
   -moz-box-align: center;
   align-items: center;
@@ -88,28 +88,28 @@ const ListItemInCart = ({
   minusOneById,
   removeById
 }) => (
-  <Item_Wrapper>
-    <Item_Inner_Left>
-      <Inner_Pic>
+  <ItemWrapper>
+    <ItemInnerLeft>
+      <InnerPic>
         <Pic src={bigimg} />
-      </Inner_Pic>
-      <Inner_Discription>
+      </InnerPic>
+      <InnerDiscription>
         <Brand>{brand}</Brand>
         <Product>{shortdiscription}</Product>
         <Price>{price}</Price>
-      </Inner_Discription>
-    </Item_Inner_Left>
-    <Item_Inner_Right>
+      </InnerDiscription>
+    </ItemInnerLeft>
+    <ItemInnerRight>
       <Quantity>
-        <Quantity_Inner>
+        <QuantityInner>
           <Minus onClick={minusOneById}>-</Minus>
           <span>{number}</span>
           <Plus onClick={addOneById}>+</Plus>
-        </Quantity_Inner>
+        </QuantityInner>
       </Quantity>
       <Removal onClick={removeById}>Remove</Removal>
-    </Item_Inner_Right>
-  </Item_Wrapper>
+    </ItemInnerRight>
+  </ItemWrapper>
 );
 
 export default ListItemInCart;

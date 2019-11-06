@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Badge_div = styled.div`
+const BadgeDiv = styled.div`
   width: 32px;
   height: 32px;
   box-sizing: border-box;
@@ -19,6 +19,6 @@ const Badge_div = styled.div`
 `;
 
 const Badge = ({ number }) =>
-  number > 0 ? <Badge_div>{number}</Badge_div> : false;
+  number > 0 ? <BadgeDiv>{number}</BadgeDiv> : false;
 
 export default Badge;

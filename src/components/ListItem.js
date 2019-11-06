@@ -14,7 +14,7 @@ const Pic = styled.img`
 const Info = styled.div`
   margin-top: 10px;
 `;
-const Two_Lines = styled.div`
+const TwoLines = styled.div`
   height: 36px;
   font-size: 14px;
   line-height: 1.3;
@@ -33,10 +33,10 @@ const Price = styled.div`
   color: #f02b2b;
   font-size: 19px;
 `;
-const Add_To_Cart = styled.div`
+const AddToCart = styled.div`
   padding-top: 10px;
 `;
-const Add_To_Cart_Button = styled.button`
+const AddToCartButton = styled.button`
   border-radius: 4px;
   height: 25px;
   width: 90px;
@@ -51,13 +51,13 @@ const ListItem = ({ bigimg, longdiscription, price, addToCartById }) => (
   <Wrapper>
     <Pic src={bigimg} />
     <Info>
-      <Two_Lines>{longdiscription}</Two_Lines>
+      <TwoLines>{longdiscription}</TwoLines>
       <Price>{price}</Price>
-      <Add_To_Cart>
-        <Add_To_Cart_Button onClick={addToCartById}>
+      <AddToCart>
+        <AddToCartButton onClick={addToCartById}>
           Add to Cart
-        </Add_To_Cart_Button>
-      </Add_To_Cart>
+        </AddToCartButton>
+      </AddToCart>
     </Info>
   </Wrapper>
 );
