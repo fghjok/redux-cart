@@ -1,18 +1,18 @@
 [
-    {"id": 1, "bigimg":"./static/AMD.webp", "longdiscription":"AMD APU系列 A8-9600 处理器 4核 R7核显 3.1GHz AM4接口 盒装CPU", "price": 290, "shortdiscription":"A8-9600 处理器 4核", "brand":"AMD"},
-    {"id": 2, "bigimg":"./static/NIKON.webp", "longdiscription":"尼康（Nikon） D610机身 单反相机 入门级全画幅机身 d610", "price": 6299, "shortdiscription":"D610机身 单反相机", "brand":"Nikon"},
-    {"id": 3, "bigimg":"./static/DDR3.webp", "longdiscription":"美商海盗船(USCORSAIR)DDR3 1600 8GB 台式机内存条 复仇者系列 梳型散热片", "price": 279, "shortdiscription":"DDR3 1600 8GB", "brand":"USCORSAIR"},
-    {"id": 4, "bigimg":"./static/GIGABYTE.webp", "longdiscription":"技嘉（GIGABYTE）X570 GAMING X 游戏主板 支持3700X/3800X/3900X（AMD X570/socket AM4)", "price": 1500, "shortdiscription":"X570 GAMING X 游戏主板", "brand":"GIGABYTE"},
-    {"id": 5, "bigimg":"./static/AMDRYZEN.webp", "longdiscription":"AMD 锐龙9 3900X处理器(r9)7nm 12核24线程 3.8GHz 105W AM4接口 盒装CPU 100-100000023CBX ", "price": 3999, "shortdiscription":"锐龙9 3900X处理器(r9)7nm", "brand":"AMD"},
-    {"id": 6, "bigimg":"./static/GWATCH.webp", "longdiscription":"三星Galaxy Watch Active2 水星黑 智能手表 内赠三星原装表带一根（颜色随机） 44mm铝 ", "price": 1900, "shortdiscription":"Galaxy Watch Active2", "brand":"SAMSUNG"},
-    {"id": 7, "bigimg":"./static/HONNOR.webp", "longdiscription":"荣耀 HONOR xSport PRO AM66 运动蓝牙耳机 长续航 连接快 高音质 延迟低 海鸥灰 ", "price": 369, "shortdiscription": "HONOR xSport PRO AM66", "brand":"HONNOR"},
-    {"id": 8, "bigimg":"./static/HORI.webp", "longdiscription":"HORI PS4-129新型格斗摇杆 街霸/KOF/拳皇 PS3/PS4/PC", "price": 598, "shortdiscription":"HORI PS4-129", "brand":"HORI"},
-    {"id": 9, "bigimg":"./static/JBL.webp", "longdiscription":"JBL GO2 音乐金砖二代 便携式蓝牙音箱 低音炮 户外音箱 迷你小音响 可免提通话 防水设计 宝石红 ", "price": 299, "shortdiscription":"JBL GO2 ", "brand":"JBL"},
-    {"id": 10, "bigimg":"./static/LENOVO.webp", "longdiscription":"联想(Lenovo)M0520音箱音响电脑台式机笔记本电脑音箱低音炮多媒体2.0声道 红色 ", "price": 59, "shortdiscription":"联想(Lenovo)M0520", "brand":"LENOVO"},
-    {"id": 11, "bigimg":"./static/SENNHEISER.webp", "longdiscription":"森海塞尔（Sennheiser） CX180 StreetII 入耳式立体声耳机 手机耳机 ", "price": 219, "shortdiscription":"CX180 StreetII", "brand":"SENNHEISER"},
-    {"id": 12, "bigimg":"./static/SONYECM.webp", "longdiscription":"索尼（SONY）ECM-GZ1M 枪形变焦麦克风（适用索尼7系微单/部分摄像机/部分黑卡型号 以索尼官网为准）", "price": 499, "shortdiscription":"（SONY）ECM-GZ1M", "brand":"SONY"},
-    {"id": 13, "bigimg":"./static/SONYILCE.webp", "longdiscription":"索尼（SONY）ILCE-6100L A6100L APS-C画幅微单数码相机 标准镜头套装 Vlog自拍视频 黑色(alpha 6100) ", "price": 5499, "shortdiscription":"（SONY）ILCE-6100L", "brand":"SONY"},
-    {"id": 14, "bigimg":"./static/SONYPS4.webp", "longdiscription":"索尼（SONY）PS4 Pro PlayStation国行游戏机 1TB主机（黑色）", "price": 2499, "shortdiscription":"PS4 Pro PlayStation", "brand":"SONY"},
-    {"id": 15, "bigimg":"./static/THERMALTAKE.webp", "longdiscription":"技嘉（GIGABYTE）X570 GAMING X 游戏主板 支持3700X/3800X/3900X（AMD X570/socket AM4)", "price": 1500, "shortdiscription":"X570 GAMING X 游戏主板", "brand":"GIGABYTE"}
+    {"id": 1, "bigimg":"/static/img/1.jpg", "longdiscription":"华硕（ASUS）ROG-STRIX-GeForce RTX2080 TI-O11G-GAMING 1350-1665MHz 14000MHz 游戏电竞专业显卡 11G ", "price": 11999.00, "shortdiscription":"华硕（ASUS）ROG-STRIX-GeForce RTX2080", "brand":"华硕"},
+    {"id": 2, "bigimg":"/static/img/2.jpg", "longdiscription":"影驰（Galaxy）GeForce RTX 2080 Ti S 11GB/352Bit GD6显卡+AMD 锐龙7 3800X处理器(r7)7nm 8核", "price": 7799.00, "shortdiscription":"影驰（Galaxy）GeForce RTX 2080 Ti S ", "brand":"影驰"},
+    {"id": 3, "bigimg":"/static/img/3.jpg", "longdiscription":"英伟达（NVIDIA）TITAN RTX 英伟达（NVIDIA）TITAN RTX 英伟达（NVIDIA）TITAN RTX ", "price": 18999.00, "shortdiscription":" 英伟达（NVIDIA）TITAN RTX", "brand":"英伟达"},
+    {"id": 4, "bigimg":"/static/img/4.jpg", "longdiscription":"技嘉(GIGABYTE)GeForce RTX 2080Ti GAMING OC 1665-1650MHz 14000MHz 352bit GDDR6 11G 电竞游戏显卡 ", "price": 9999.00, "shortdiscription":"技嘉(GIGABYTE)GeForce RTX 2080Ti", "brand":"技嘉"},
+    {"id": 5, "bigimg":"/static/img/5.jpg", "longdiscription":"七彩虹（Colorful）iGame GeForce RTX 2080 Ti Advanced OC 1635MHz/14Gbps GDDR6 11G电竞游戏显卡  ", "price": 8799.00, "shortdiscription":"七彩虹（Colorful）iGame GeForce RTX 2080 Ti", "brand":"七彩虹"},
+    {"id": 6, "bigimg":"/static/img/6.jpg", "longdiscription":"微星（MSI）魔龙 GeForce RTX 2080 Ti GAMING X TRIO 1755MHz 11GD6 旗舰寂冷电竞游戏显卡  ", "price": 10888.00, "shortdiscription":"微星（MSI）魔龙 GeForce RTX 2080 Ti", "brand":"微星"},
+    {"id": 7, "bigimg":"/static/img/7.jpg", "longdiscription":"华硕（ASUS）ROG-STRIX-GeForce RTX2080 TI-A11G-GAMING 1350-1590MHz 14000MHz 游戏电竞专业显卡 11G  ", "price": 11999.00, "shortdiscription": "华硕（ASUS）ROG-STRIX-GeForce RTX2080", "brand":"华硕"},
+    {"id": 8, "bigimg":"/static/img/8.jpg", "longdiscription":"华硕（ASUS）DUAL-GeForce RTX 2080 TI-O11G 1350-1650MHz 14000MHz 游戏电竞专业显卡 11G 352bit 独立显卡 ", "price": 9999.00, "shortdiscription":"华硕（ASUS）DUAL-GeForce RTX 2080 TI", "brand":"华硕"},
+    {"id": 9, "bigimg":"/static/img/9.jpg", "longdiscription":"索泰(ZOTAC)RTX2080Ti玩家力量至尊PGF OC14显卡自营/台式机游戏吃鸡独立显卡11GD6/1350-1755/14000MHz  ", "price": 9999.00, "shortdiscription":"索泰(ZOTAC)RTX2080Ti玩家力量至尊PGF ", "brand":"索泰"},
+    {"id": 10, "bigimg":"/static/img/10.jpg", "longdiscription":"技嘉(GIGABYTE)AORUS GeForce RTX 2080Ti XTREME 大雕 1770 14140 352bit GDDR6 11G 电竞游戏显卡 ", "price": 11999.00, "shortdiscription":"技嘉(GIGABYTE)AORUS GeForce RTX 2080Ti", "brand":"技嘉"},
+    {"id": 11, "bigimg":"/static/img/11.jpg", "longdiscription":"映众（Inno3D）GeForce RTX 2080 Ti Gaming版 11GB GDDR6 PCI-E吃鸡显卡/游戏电竞台式机独立显卡  ", "price": 8099.00, "shortdiscription":"映众（Inno3D）GeForce RTX 2080 Ti ", "brand":"映众"},
+    {"id": 12, "bigimg":"/static/img/12.jpg", "longdiscription":"索泰(ZOTAC)RTX2080Ti X-GAMING显卡自营/台式机游戏吃鸡独立显卡11GD6/1350-1545/14000MHz ", "price": 8699.00, "shortdiscription":"索泰(ZOTAC)RTX2080Ti X-GAMING", "brand":"索泰"},
+    {"id": 13, "bigimg":"/static/img/13.jpg", "longdiscription":"微星（MSI）GeForce RTX 2080 Ti LIGHTNING Z 11GB GDDR6 1770MHz 骨灰游戏显卡 炫影闪电 ", "price": 16888.00, "shortdiscription":"微星（MSI）GeForce RTX 2080 Ti ", "brand":"微星"},
+    {"id": 14, "bigimg":"/static/img/14.jpg", "longdiscription":"微星（MSI）万图师 GeForce RTX 2080 Ti VENTUS GP 11G GDDR6 时尚精巧电脑电竞游戏小卡显卡 ", "price": 8999.00, "shortdiscription":"微星（MSI）万图师 GeForce RTX 2080 Ti ", "brand":"微星"},
+    {"id": 15, "bigimg":"/static/img/15.jpg", "longdiscription":"微星（MSI）黑龙 GeForce RTX 2080 Ti 11G DUKE 暗黑龙爵 1665MHz 酷冷电脑游戏电竞显卡 ", "price": 9888.00, "shortdiscription":"微星（MSI）黑龙 GeForce RTX 2080 Ti ", "brand":"微星"}
 
 ]
