@@ -6,7 +6,6 @@ import PlaceHolderInPop from "./PlaceHolderInPop"
 import getPadding from "../../../utils/getPadding";
 
 const Pop = ({itemsInPop, stateOfPop, removeFromComparison, clearComparison, hidePop}) => {
-    //一些东西可以简化代码！！！
     const compareUrl = itemsInPop.reduce(
         (previousValue, item, index) => (
             index === 0 ? previousValue + "/compare/" + item.id :
@@ -14,25 +13,37 @@ const Pop = ({itemsInPop, stateOfPop, removeFromComparison, clearComparison, hid
         ),
     "");
 
+    const occupiedPlaces = itemsInPop.map( item => 
+        <ListItemInPop 
+            key = {item.id} 
+            {...item} 
+            removeFromComparison = {removeFromComparison(item.id)}
+        />
+    );
+
+    const emptyPlaces =  getPadding(
+        4,
+        itemsInPop.length + 1,
+        (index) => (<PlaceHolderInPop showNum = {index}/>)
+    )   
+
     const result = (
-            <PopWrapper>
-                <UpperRow>
-                    <Tab>对比栏</Tab>
-                    <Padding></Padding>
-                    <BtnHide onClick = {hidePop}>隐藏</BtnHide>
-                </UpperRow>
-                <LowerRow>
-                    {itemsInPop.map( item => <ListItemInPop key = {item.id} 
-                                                                {...item} 
-                                                                removeFromComparison = {removeFromComparison(item.id)}/>)}
-                    {getPadding(4, itemsInPop.length + 1, (index) => (<PlaceHolderInPop showNum = {index}/>))}
-                    <CompareActiveClear>
-                        <CompareBtn to = {compareUrl}>对比</CompareBtn>
-                        <ClearBtn onClick = {clearComparison}>清空对比栏</ClearBtn>
-                    </CompareActiveClear>
-                </LowerRow>
-            </PopWrapper>
-        )
+        <PopWrapper>
+            <UpperRow>
+                <Tab>对比栏</Tab>
+                <Padding></Padding>
+                <BtnHide onClick = {hidePop}>隐藏</BtnHide>
+            </UpperRow>
+            <LowerRow>
+                {occupiedPlaces}
+                {emptyPlaces}
+                <CompareActiveClear>
+                    <CompareBtn to = {compareUrl}>对比</CompareBtn>
+                    <ClearBtn onClick = {clearComparison}>清空对比栏</ClearBtn>
+                </CompareActiveClear>
+            </LowerRow>
+        </PopWrapper>
+    )
     return stateOfPop ? result : null;
 }
 

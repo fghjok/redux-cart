@@ -1,0 +1,9 @@
+{
+    "Introduction": {"smallimg":"/static/img/11.jpg", "price":"8099", "discription":"映众（Inno3D）GeForce RTX 2080 Ti Gaming版 "},
+    "Common": {"产地":"中国大陆", "售后服务":"三年质保", "包装规格":"个", "产品毛重":"2.05kg"},
+    "接口": {"MINI-HDMI":"无", "DP接口":"2个", "HDMI接口":"3个", "Type-C接口":"1个", "MINI-DP接口":"无"},
+    "核心": {"核心品牌":"NVIDIA", "核心频率":"1350-1590MHz"},
+    "显存": {"显存位宽":"352", "显存类型":"GDDR6", "显存容量":"11G"},
+    "规格": {"HDCP":"支持", "电源接口":"8pin x 2", "最大分辨率":"7680 x 4320"},
+    "3D API": {"OpenGL":"4.5"}
+}

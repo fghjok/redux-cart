@@ -13,11 +13,13 @@ const CommonItemsTable = ({comparativeResult}) => {
     return (
         <Table>
             <tbody>
-                {commonKeys.map(key => (<tr>
-                                            <TableHead data = {key}/>
-                                            {commonData.map( product => <TableData data = {getTdContent(product[key])}/>)}
-                                            {getPadding(4, commonData.length + 1 , () => (<TableData/>) )}
-                                        </tr>))}
+                {commonKeys.map(key =>
+                    (<tr>
+                        <TableHead data = {key}/>
+                        {commonData.map( product => <TableData data = {getTdContent(product[key])}/>)}
+                        {getPadding(4, commonData.length + 1 , () => (<TableData/>) )}
+                    </tr>)
+                )}
             </tbody>
         </Table>
     );

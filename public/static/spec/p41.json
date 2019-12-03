@@ -1,7 +1,0 @@
-{
-    "Introduction": {"smallimg":"/static/img/53b2d9c1371cf411.jpg", "price":"4399", "discription":"技嘉(GIGABYTE)GeForce RTX 2070 SUPER GAMING "},
-    "Common": {"Origin":"China", "Brand":"GIGABYTE", "Service":"2 years", "Net":"1.32kg"},
-    "Interface": {"MINI-HDMI":"None", "S":"None"},
-    "Core": {"Brand":"Nvidia", "Frequency":"12GHz"},
-    "Memory": {"Volume":"16GB", "Width":"32bit"}
-}

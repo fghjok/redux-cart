@@ -24,9 +24,9 @@ class FullAlert extends React.Component {
     render() {
         return(
             this.state.showAlert ?
-            <Alert>对比栏已满，您可以删除不需要的栏内商品再继续添加哦！</Alert>
+                <Alert>对比栏已满，您可以删除不需要的栏内商品再继续添加哦！</Alert>
             :
-            null
+                null
         )
     }
 

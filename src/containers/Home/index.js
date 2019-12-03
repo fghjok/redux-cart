@@ -43,18 +43,18 @@ const Home = () => (
   
   export default Home;
 
-  const Footer = styled.div`
-  color: #666;
-  background-color: #eaeaea;
-  height: 20px;
-  text-align: center;
-  font-size: 12px;
-  line-height: 20px;
+const Footer = styled.div`
+    color: #666;
+    background-color: #eaeaea;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
 `;
 
 const Github = styled.a`
-  position: fixed;
-  bottom: 40px;
-  right: 7px;
-  cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 7px;
+    cursor: pointer;
 `;

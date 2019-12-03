@@ -9,17 +9,23 @@ import getPadding from "../../../../utils/getPadding";
 const IntroductionTable = ({comparativeResult, highlightDifferentItems, hideSameItems, changeHighlightDifferentItems, changehideSameItems}) => {
     if (comparativeResult.length === 0) {return null;}
     const introductionData = comparativeResult.result.map(product => product["Introduction"]);
+    const tableHead = 
+    <TableHead
+        highlightDifferentItems = {highlightDifferentItems} 
+        hideSameItems = {hideSameItems} 
+        changeHighlightDifferentItems = {changeHighlightDifferentItems} 
+        changehideSameItems = {changehideSameItems}
+    />;
+    const occupiedPlaces = introductionData.map( (product, index) => <TableData data = {product} />);
+    const emptyPlaces = getPadding(4, introductionData.length + 1, () => (<TableData data = {null}/>));
     return (
         <Wrapper>
             <Table>
                 <TBody>
                     <TR>
-                        {<TableHead highlightDifferentItems = {highlightDifferentItems} 
-                                    hideSameItems = {hideSameItems} 
-                                    changeHighlightDifferentItems = {changeHighlightDifferentItems} 
-                                    changehideSameItems = {changehideSameItems}/>}
-                        {introductionData.map( (product, index) => <TableData data = {product} />)}
-                        {getPadding(4, introductionData.length + 1, () => (<TableData data = {null}/>))}
+                        {tableHead}
+                        {occupiedPlaces}
+                        {emptyPlaces}
                     </TR>
                 </TBody>
             </Table>

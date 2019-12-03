@@ -38,25 +38,27 @@ const getTableContent = (data, name, highlightDifferentItems, hideSameItems ) =>
     return (
         tableKeys.map( 
             (key, index) => (
-                (equalityResult[index] && hideSameItems)?
-                null:
-                <tr>
-                    <TableHead data = {key}/>
-                    {data.map( product => 
-                        <TableData 
-                            data = {getTdContent(product[name][key])}
-                            isAllSame = {equalityResult[index]}
-                            highlightDifferentItems = {highlightDifferentItems}
-                        />)}
-                    {getPadding(
-                        4,
-                        data.length + 1,
-                        () => (<TableData
+                (equalityResult[index] && hideSameItems)
+                ?
+                    null
+                :
+                    <tr>
+                        <TableHead data = {key}/>
+                        {data.map( product => 
+                            <TableData 
+                                data = {getTdContent(product[name][key])}
                                 isAllSame = {equalityResult[index]}
                                 highlightDifferentItems = {highlightDifferentItems}
-                                />) 
-                    )}
-                </tr>
+                            />)}
+                        {getPadding(
+                            4,
+                            data.length + 1,
+                            () => (<TableData
+                                    isAllSame = {equalityResult[index]}
+                                    highlightDifferentItems = {highlightDifferentItems}
+                                    />) 
+                        )}
+                    </tr>
             )
         )
     )

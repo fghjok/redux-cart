@@ -6,7 +6,7 @@ function mapStateToProps(state) {
     const items = state.home.products.items;
     const isFetching = state.home.products.isFetching;
     return { items, isFetching, };
-  }
+}
   
 function mapDispatchToProps(dispatch) {
     return {
