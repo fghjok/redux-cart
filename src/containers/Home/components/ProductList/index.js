@@ -1,9 +1,11 @@
 import React from "react";
-import ListItem from "../components/ListItem";
+import ListItem from "./ListItem";
 import { Spinner } from "@chakra-ui/core";
 import styled from "styled-components";
+import { connect } from "react-redux";
+import { actions as homeActions } from "../../../../redux/modules/home";
 
-class MainBox extends React.Component {
+class ProductList extends React.Component {
     componentDidMount() {
         const { loadProducts } = this.props;
         loadProducts();
@@ -39,7 +41,23 @@ class MainBox extends React.Component {
     }
 }
 
-export default MainBox;
+function mapStateToProps(state) {
+    const items = state.home.products.items;
+    const isFetching = state.home.products.isFetching;
+    return { items, isFetching, };
+}
+  
+function mapDispatchToProps(dispatch) {
+    return {
+        addToCart: id => () => dispatch(homeActions.addToCart(id)),
+        loadProducts: () => dispatch(homeActions.loadProducts()),
+    };
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(ProductList);
 
 const Wrapper = styled.div`
     margin-top: 0rem;

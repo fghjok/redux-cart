@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
-import { actions as homeActions } from "../../../redux/modules/home";
+import { actions as homeActions } from "../../../../redux/modules/home";
 
 const ListItem = ({ 
     id,

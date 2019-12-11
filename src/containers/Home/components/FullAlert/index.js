@@ -20,6 +20,7 @@ class FullAlert extends React.Component {
             this.setState((state, props) => ({ showAlert: false }));
         }, 5500);
     }
+
     
     render() {
         return(

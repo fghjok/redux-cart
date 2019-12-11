@@ -1,17 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const SvgWrapper = styled.a`
-    -moz-box-align: center;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    -moz-box-pack: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 96px;
-`;
-
 const CartButton = ({ openDrawer }) => (
     <SvgWrapper onClick={openDrawer}>
         <svg
@@ -89,3 +78,15 @@ const CartButton = ({ openDrawer }) => (
 );
 
 export default CartButton;
+
+
+const SvgWrapper = styled.a`
+    -moz-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 96px;
+`;

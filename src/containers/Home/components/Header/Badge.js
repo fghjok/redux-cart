@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+const Badge = ({ number }) =>
+    number > 0 ? <BadgeDiv>{number}</BadgeDiv> : false;
+
+export default Badge;
+
 const BadgeDiv = styled.div`
     width: 32px;
     height: 32px;
@@ -17,8 +22,3 @@ const BadgeDiv = styled.div`
     top: 5px;
     right: 5px;
 `;
-
-const Badge = ({ number }) =>
-    number > 0 ? <BadgeDiv>{number}</BadgeDiv> : false;
-
-export default Badge;

@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import ContainerForHeader from "./containers/ContainerForHeader";
-import ContainerForMainBox from "./containers/ContainerForMainBox";
-import ContainerForDrawerWithCart from "./containers/ContainerForDrawerWithCart";
-import ContainerForPop from "./containers/ContainerForPop";
-import FullAlert from "./containers/FullAlert";
+import Header from "./components/Header";
+import ProductList from "./components/ProductList";
+import CartDrawer from "./components/CartDrawer";
+import ComparePop from "./components/ComparePop";
+import FullAlert from "./components/FullAlert";
 
 const Home = () => (
     <>
-        <ContainerForHeader />
-        <ContainerForMainBox />
+        <Header />
+        <ProductList />
         <Footer>@NO RIGHTS RESERVED</Footer>
         <Github href="https://github.com/fghjok/redux-cart">
             <svg
@@ -35,8 +35,8 @@ const Home = () => (
             ></path>
             </svg>
         </Github>
-        <ContainerForDrawerWithCart />
-        <ContainerForPop />
+        <CartDrawer />
+        <ComparePop />
         <FullAlert/>
     </>
   );
