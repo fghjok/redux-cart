@@ -8,8 +8,8 @@ const App = () => (
     <ThemeProvider>
         <Router>
             <Switch>
-                <Route  exact path="/compare/:ids" component={Compare}/>
-                <Route  path="/" component={Home}/>
+                <Route  exact path="/compare/:ids"  render = {(props) => <Compare {...props}/> }/>
+                <Route  path="/" render = {(props) => <Home {...props}/> }/>
             </Switch>
         </Router>
     </ThemeProvider>
